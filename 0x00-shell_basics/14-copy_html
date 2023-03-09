@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in *.html; do test -f "../$f" -a "$f" -ot "../$f" cp -p "$f" "../"; done
+for f in *.html do test -f "../$f" -a "$f" -ot "../$f" cp -p "$f" "../" done

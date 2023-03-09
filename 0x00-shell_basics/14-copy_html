@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u -r /*.html /dirname
+for f in *.html; do test -f "../$f" -a "$f" -ot "../$f" cp -p "$f" "../"; done
